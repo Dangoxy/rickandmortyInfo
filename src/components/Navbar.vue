@@ -11,7 +11,7 @@
             src="../../public/portal-rick-and-morty.gif"></img>
         </router-link>
         
-        <div class="flex justify-center items-center gap-4 font-merrisans text-[16px] text-[rgba(3,28,26,0.50)] font-medium">
+        <div class="flex justify-center items-center gap-4 font-merrisans sm:text-[16px] text-[14px] text-[rgba(3,28,26,0.50)] font-medium">
             <router-link 
             class="hover:text-[rgba(3,28,26,0.75)]"
             :class="activePage === 'episodes' ? 'text-[rgba(3,28,26,1)] hover:text-[rgba(3,28,26,1)]' : ''"

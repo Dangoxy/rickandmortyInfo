@@ -18,9 +18,9 @@
             'background-size':'contain',
             'background-position': 'center center'}">
 
-                <div class="w-full h-full backdrop-blur-[32px] rounded-[8px] border-4 border-[#031C1A]
+                <div class="w-full h-full backdrop-blur-[32px] rounded-[8px] border-4 border-[#031C1A] group
                 flex md:flex-col sm:flex-row flex-col justify-center items-center gap-4 p-4">
-                    <img class="xl:size-24 md:size-16 size-12 transition-all duration-300" src="../../public/episodesIcon.png" />
+                    <img class="xl:size-24 md:size-16 size-12 group-hover:size-28 transition-all duration-300" src="../../public/episodesIcon.png" />
                     <h1 class="xl:text-[48px] md:text-[32px] text-[28px] transition-all duration-300">Episodes</h1>
                 </div>
                 
@@ -34,9 +34,9 @@
             'background-size':'contain',
             'background-position': 'center center'}">
 
-                <div class="w-full h-full backdrop-blur-[32px] rounded-[8px] border-4 border-[#031C1A]
-                flex md:flex-col sm:flex-row flex-col justify-center items-center gap-6 p-4">
-                    <img class="xl:size-24 md:size-16 size-12 transition-all duration-300" src="../../public/charactersIcon.png" />
+                <div class="w-full h-full backdrop-blur-[32px] rounded-[8px] border-4 border-[#031C1A] group
+                flex md:flex-col sm:flex-row flex-col justify-center items-center gap-4 p-4 transition-all duration-500">
+                    <img class="xl:size-24 md:size-16 size-12 group-hover:size-28 transition-all duration-300" src="../../public/charactersIcon.png" />
                     <h1 class="xl:text-[48px] md:text-[32px] text-[28px] transition-all duration-300">Characters</h1>
                 </div>
 
@@ -51,9 +51,9 @@
             'background-size':'contain',
             'background-position': 'center center'}">
 
-                <div class="w-full h-full backdrop-blur-[32px] rounded-[8px] border-4 border-[#031C1A]
+                <div class="w-full h-full backdrop-blur-[32px] rounded-[8px] border-4 border-[#031C1A] group
                 flex md:flex-col sm:flex-row flex-col justify-center items-center gap-4 p-4">
-                    <img class="xl:size-24 md:size-16 size-12 transition-all duration-300" src="../../public/globeIcon.png" />
+                    <img class="xl:size-24 md:size-16 size-12 group-hover:size-28 transition-all duration-300" src="../../public/globeIcon.png" />
                     <h1 class="xl:text-[48px] md:text-[32px] text-[28px] transition-all duration-300">Locations</h1>
                 </div>
                 
@@ -74,6 +74,7 @@ import {ref, reactive} from "vue";
 </script>
 
 <style scoped>
+
 .animatedLogoDisappearing{
     width: 0%;
     display: hidden;

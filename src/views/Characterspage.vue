@@ -21,7 +21,7 @@
                     <div
                     v-for="pagination in paginationForCharacters.pagination"
                     
-                    class="flex justify-center items-center border-2 p-2 aspect-square size-8 border-[#031C1A] text-[#031C1A] bg-[#F0F9E3] rounded-[4px]"
+                    class="flex justify-center items-center border-2 p-2 aspect-square size-8  rounded-[4px]"
                     :class="pagination.page === '...' ? 'border-none size-fit -m-2 bg-transparent' : pagination.active ? 'border-[#031C1A] text-[#F0F9E3] bg-[#031C1A]':'border-[#031C1A] text-[#031C1A] bg-transparent'"
                     
                     @click="pagination.page !=='...' && getPageWithIndex(pagination.page)"
@@ -71,7 +71,7 @@
                 <div
                 v-for="pagination in paginationForCharacters.pagination"
                 
-                class="flex justify-center items-center border-2 p-2 aspect-square size-8 border-[#031C1A] text-[#031C1A] bg-[#F0F9E3] rounded-[4px]"
+                class="flex justify-center items-center border-2 p-2 aspect-square size-8 rounded-[4px]"
                 :class="pagination.page === '...' ? 'border-none size-fit -m-2' : pagination.active ? 'border-[#031C1A] text-[#F0F9E3] bg-[#031C1A]':'border-[#031C1A] text-[#031C1A] bg-[#F0F9E3]'"
                 
                 @click="pagination.page !=='...' && getPageWithIndex(pagination.page)"

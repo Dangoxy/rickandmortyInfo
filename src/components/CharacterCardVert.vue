@@ -1,5 +1,5 @@
 <template>
-    <div class="border-4 border-black rounded-[8px] w-[200px] h-[400px] relative flex-col overflow-hidden">
+    <div class="border-4 border-black rounded-[8px] min-w-[200px] max-w-[200px] h-[400px] relative flex-col overflow-hidden">
         <!-- <h1>{{ props.character.name }}</h1> -->
         <!-- <img :src="props.character.image" class="h-full bg-repeat-x"></img> -->
 
@@ -45,12 +45,16 @@
         class="w-full h-full bg-[#ffffff] bg-opacity-50 backdrop-blur-[32px] z-10 rounded-b-[6px] 
         flex flex-col p-2 justify-between text-shadow shadow-[rgba(255,255,255,0.5)] gap-4">
 
-            <div class="w-full h-[50%] flex flex-col justify-between">
+            <div class="w-full h-[50%] flex flex-col justify-between items-center">
+                <div class="w-full flex justify-center items-center">
+                    <img @click="switchShowAll" class="size-6 cursor-pointer hover:scale-110" :src="showAll ? '../../public/closeIcon.png' : '../../public/infoIcon.png'" />
+                </div>
                 <div class="flex justify-between items-center">
-                    <h1 @click="switchShowAll" class="text-[20px] font-bold">{{props.character.name}}</h1>
+                    <h1 class="text-[20px] font-bold text-center">{{props.character.name}}</h1>
+                    
                 </div>
 
-                <div class="flex flex-col justify-between items-center">
+                <div class="flex flex-col justify-between items-center w-full">
                     <div class="flex justify-start items-center w-full flex-col">
                         <div class="flex justify-start w-full items-center gap-1">
                             <img src="../../public/locationIconWShadow.png" class="size-4"></img>
@@ -61,7 +65,7 @@
                             <h4 class="font-bold underline underline-offset-2 w-full text-end">{{ props.character.origin.name }}</h4>
                         </router-link>
                         <div :to="('/locations/'+props.character.origin.url.split('location/')[1])" v-if="props.character.origin.name ==='unknown'" class="flex gap-2 justify-center items-center w-full">
-                            <h4 class="font-bold-offset-2 w-full text-end">Unknown</h4>
+                            <h4 class="w-full text-end">Unknown</h4>
                         </div>
                     </div>
 
@@ -75,7 +79,7 @@
                             <h4 class="font-bold underline underline-offset-2 w-full text-end">{{ props.character.location.name }}</h4>
                         </router-link>
                         <div :to="('/locations/'+props.character.location.url.split('location/')[1])" v-if="props.character.location.name ==='unknown'" class="flex gap-2 justify-center items-center w-full">
-                            <h4 class="font-bold w-full text-end">Unknown</h4>
+                            <h4 class="w-full text-end">Unknown</h4>
                         </div>
                     </div>
                 </div>
