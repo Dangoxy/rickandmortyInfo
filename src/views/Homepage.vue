@@ -18,7 +18,7 @@
             'background-size':'contain',
             'background-position': 'center center'}">
 
-                <div class="w-full h-full backdrop-blur-[16px] bg-white bg-opacity-50 rounded-[8px] border-4 border-[#031C1A] group
+                <div class="w-full h-full backdrop-blur-[32px] bg-[rgba(255,255,255,0.5)] rounded-[8px] border-4 border-[#031C1A] group
                 flex md:flex-col sm:flex-row flex-col justify-center items-center gap-4 p-4">
                     <img class="xl:size-24 md:size-16 size-12 group-hover:size-28 transition-all duration-300" src="../../public/episodesIcon.png" />
                     <h1 class="xl:text-[48px] md:text-[32px] text-[28px] transition-all duration-300">Episodes</h1>
@@ -34,7 +34,7 @@
             'background-size':'contain',
             'background-position': 'center center'}">
 
-                <div class="w-full h-full backdrop-blur-[16px] bg-white bg-opacity-50 rounded-[8px] border-4 border-[#031C1A] group
+                <div class="w-full h-full backdrop-blur-[16px] bg-[rgba(255,255,255,0.5)] rounded-[8px] border-4 border-[#031C1A] group
                 flex md:flex-col sm:flex-row flex-col justify-center items-center gap-4 p-4 transition-all duration-500">
                     <img class="xl:size-24 md:size-16 size-12 group-hover:size-28 transition-all duration-300" src="../../public/charactersIcon.png" />
                     <h1 class="xl:text-[48px] md:text-[32px] text-[28px] transition-all duration-300">Characters</h1>
@@ -51,7 +51,7 @@
             'background-size':'contain',
             'background-position': 'center center'}">
 
-                <div class="w-full h-full backdrop-blur-[16px] bg-white bg-opacity-50 rounded-[8px] border-4 border-[#031C1A] group
+                <div class="w-full h-full backdrop-blur-[16px] bg-[rgba(255,255,255,0.25)] rounded-[8px] border-4 border-[#031C1A] group
                 flex md:flex-col sm:flex-row flex-col justify-center items-center gap-4 p-4">
                     <img class="xl:size-24 md:size-16 size-12 group-hover:size-28 transition-all duration-300" src="../../public/globeIcon.png" />
                     <h1 class="xl:text-[48px] md:text-[32px] text-[28px] transition-all duration-300">Locations</h1>
