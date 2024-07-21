@@ -15,7 +15,7 @@
         <!-- background -->
 
          <!-- alive banner -->
-        <div class="flex gap-1 text-[16px] absolute backdrop-blur-[32px] bg-[#ffffff] bg-opacity-50 px-2 py-1 rounded-[4px] top-1 right-1">
+        <div class="flex gap-1 text-[16px] absolute backdrop-blur-[16px] bg-[#ffffff] bg-opacity-50 px-2 py-1 rounded-[4px] top-1 right-1">
             <img v-if="props.character.status === 'Alive'" class="size-6" src="../../public/heartGreenWShadow.png"></img>
             <img v-if="props.character.status === 'Dead'" class="size-6" src="../../public/heartRedWShadow.png"></img>
             <img 
@@ -42,12 +42,14 @@
         <div :class="showAll? 'min-h-[0px]' : 'min-h-[200px]'" class="bg-black  bg-opacity-100 z-50 transition-all duration-500"></div>
 
         <div 
-        class="w-full h-full bg-[#ffffff] bg-opacity-50 backdrop-blur-[32px] z-10 rounded-b-[6px] 
+        class="w-full h-full bg-[#ffffff] bg-opacity-50 backdrop-blur-[16px] z-10 rounded-b-[6px] 
         flex flex-col p-2 justify-between text-shadow shadow-[rgba(255,255,255,0.5)] gap-4">
 
             <div class="w-full h-[50%] flex flex-col justify-between items-center">
                 <div class="w-full flex justify-center items-center">
-                    <img @click="switchShowAll" class="size-6 cursor-pointer hover:scale-110" :src="showAll ? '../../public/closeIcon.png' : '../../public/infoIcon.png'" />
+                    <!-- <img @click="switchShowAll" class="size-6 cursor-pointer hover:scale-110" :src="showAll ? '../../public/closeIcon.png' : '../../public/infoIcon.png'" /> -->
+                    <img v-if="showAll" @click="switchShowAll" class="size-6 cursor-pointer hover:scale-110" src="../../public/closeIcon.png" />
+                    <img v-else @click="switchShowAll" class="size-6 cursor-pointer hover:scale-110" src="../../public/infoIcon.png" />
                 </div>
                 <div class="flex justify-between items-center">
                     <h1 class="text-[20px] font-bold text-center">{{props.character.name}}</h1>
