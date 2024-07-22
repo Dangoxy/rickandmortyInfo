@@ -16,3 +16,5 @@ Rick and Morty Info is a web application built with Vue 3, TypeScript, and Tailw
 - **TypeScript:** For type safety and enhanced developer experience.
 - **Tailwind CSS:** For styling and creating a responsive, modern UI.
 - **Vanilla CSS:** For custom animations.
+
+Thanks to Axel Fuhrmann for the Rick and Morty API.
